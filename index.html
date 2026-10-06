@@ -203,6 +203,7 @@ src="https://www.facebook.com/tr?id=1607186040807341&ev=PageView&noscript=1"
   (function(){
     let n = 43;
     const el = document.getElementById('countNum');
+
     setInterval(()=>{
       n--;
       if(n <= 0) n = 43;
@@ -210,6 +211,15 @@ src="https://www.facebook.com/tr?id=1607186040807341&ev=PageView&noscript=1"
     },1000);
   })();
 </script>
+
+<script>
+document.getElementById('joinBtn').addEventListener('click', function () {
+  fbq('track', 'Subscribe');
+});
+</script>
+
+</body>
+</html>
 
 </body>
 </html> 
